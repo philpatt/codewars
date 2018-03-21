@@ -12,9 +12,11 @@ console.log(factorialize(5));
 // create a function that reverses the WORDS in a string
 
 function reverseWord(str){
+    var reversedArr = [];
     var words = str.split(' ');
-    for(var i=words.length-1; i=0; i--){
-        console.log(i);
+    for(var i=words.length-1; i>=0; i--){
+       reversedArr.push(words[i]);
     }
+    return reversedArr.join(' ');
 }
-console.log(reverseWord('Well hello there'));
+console.log(reverseWord('well hello there'));
