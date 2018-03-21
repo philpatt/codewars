@@ -2,6 +2,9 @@
 
 function factorialize(num){
     for(var answer=1; num>0; num--){
-        console.log(answer);
+        answer*=num;
     }
+    return answer;
 }
+console.log(factorialize(5));
+
