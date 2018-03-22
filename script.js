@@ -39,9 +39,14 @@ function isPalindrome(str){
 }
 console.log(isPalindrome('poop'));
 
+// digitial root problem. 16  -> 1 + 6 = 7
 
+function digitialRoot(){
 
+}
+console.log(digitialRoot(16));
 // Given an array of 1000 integers, write a function that returns the 10 largest numbers. unsorted
+// then do to the Nth largest numbers
 
 function largest10(numArr){
 
@@ -52,6 +57,6 @@ largest10([1234,123,2,5,7,8,9,10,33,13,12,65]);
 
 // 5 cards, compare who has poker hands 
 
-function compare (hand1, hand2){
-    
+function compare(hand1, hand2){
+
 }
