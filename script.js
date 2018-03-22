@@ -41,10 +41,15 @@ console.log(isPalindrome('poop'));
 
 // digitial root problem. 16  -> 1 + 6 = 7
 
-function digitialRoot(){
-
+function digitialRoot(num){
+    num.toString();
+    for(var i = 0; i < num.length-1; i++){
+        console.log(i);
+    }
 }
 console.log(digitialRoot(16));
+
+
 // Given an array of 1000 integers, write a function that returns the 10 largest numbers. unsorted
 // then do to the Nth largest numbers
 
