@@ -67,3 +67,70 @@ function compare(hand1, hand2){
 }
 
 // given two strings, find the character difference between two strings 
+
+
+
+// increment string
+for (var i = 0; i < split.length; i++) {
+    if (isNaN(split[i])) {
+        word.push(split[i])
+    } else if (!isNaN(split[i])) {
+        number.push(split[i])
+    }
+}
+
+
+
+
+word = word.join(''); //word is defined, concat this with incremetedNumber
+numCount = number.length;
+
+
+
+
+console.log(number)
+
+
+
+
+for (var n = 0; n < number.length; n++) {
+
+    console.log('check', number[n])
+
+    if (number[n] > '0') {
+        console.log('not zero, exit')
+
+        break;
+    } else if (number[n] === '0') {
+        console.log('this is pre-zero', number[n])
+        zeros.push(number[n])
+        zeroCount++;
+    }
+
+}
+
+console.log(zeros)
+
+number = number.join('');
+
+if (numCount === zeroCount) {
+    number++;
+    number = number.toString();
+    zeros.pop();
+    zeros = zeros.join('');
+    return word + zeros + number
+}
+
+zeros = zeros.join('');
+number++;
+number = number.toString();
+
+return word + zeros + number
+}
+
+
+
+
+
+
+incrementString('hey0099');
