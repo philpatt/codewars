@@ -65,3 +65,5 @@ largest10([1234,123,2,5,7,8,9,10,33,13,12,65]);
 function compare(hand1, hand2){
 
 }
+
+// given two strings, find the character difference between two strings 
