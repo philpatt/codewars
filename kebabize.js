@@ -8,13 +8,12 @@
 
 
 function kebabize(kebab){
-    var kebab = kebab.split('')
+    kebab = kebab.split('')
     for(l in kebab ){
         if (kebab[l] === kebab[l].toUpperCase()){
-            console.log(kebab[l]);
+            kebab[l] = '-' + kebab[l].toLowerCase();
         }
     } 
-    return kebab
+    return kebab.join('')
 }
-
 console.log(kebabize('camelsHaveHumps'))
