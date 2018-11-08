@@ -107,7 +107,7 @@ for (var n = 0; n < number.length; n++) {
         zeroCount++;
     }
 
-
+}
 
 console.log(zeros)
 
@@ -126,7 +126,6 @@ number++;
 number = number.toString();
 
 return word + zeros + number
-
 }
 
 
@@ -134,5 +133,4 @@ return word + zeros + number
 
 
 
-
-
+incrementString('hey0099');
