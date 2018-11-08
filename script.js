@@ -7,7 +7,7 @@ function factorialize(num){
     }
     return answer;
 }
-console.log(factorialize(5));
+//console.log(factorialize(5));
 
 // create a function that reverses the WORDS in a string
 
@@ -19,7 +19,7 @@ function reverseWord(str){
     }
     return reversedArr.join(' ');
 }
-console.log(reverseWord('well hello there'));
+//console.log(reverseWord('well hello there'));
 
 // create a function that determines if a word is a palindrome
 
@@ -37,7 +37,7 @@ function isPalindrome(str){
         return 'not';
     }
 }
-console.log(isPalindrome('poop'));
+//console.log(isPalindrome('poop'));
 
 // digitial root problem. 16  -> 1 + 6 = 7
 
@@ -47,7 +47,7 @@ function digitialRoot(num){
         console.log(i);
     }
 }
-console.log(digitialRoot(16));
+//console.log(digitialRoot(16));
 
 
 // Given an array of 1000 integers, write a function that returns the 10 largest numbers. unsorted
@@ -67,33 +67,19 @@ function compare(hand1, hand2){
 }
 
 // given two strings, find the character difference between two strings 
-
-
-
-// increment string
-for (var i = 0; i < split.length; i++) {
-    if (isNaN(split[i])) {
-        word.push(split[i])
-    } else if (!isNaN(split[i])) {
-        number.push(split[i])
+function incrementString(split){
+    // increment string
+    for (var i = 0; i < split.length; i++) {
+        if (isNaN(split[i])) {
+            word.push(split[i])
+        } else if (!isNaN(split[i])) {
+            number.push(split[i])
+        }
     }
-}
-
-
-
-
-word = word.join(''); //word is defined, concat this with incremetedNumber
-numCount = number.length;
-
-
-
-
-console.log(number)
-
-
-
-
-for (var n = 0; n < number.length; n++) {
+    word = word.join(''); //word is defined, concat this with incremetedNumber
+    numCount = number.length;
+    //console.log(number)
+    for (var n = 0; n < number.length; n++) {
 
     console.log('check', number[n])
 
@@ -107,30 +93,30 @@ for (var n = 0; n < number.length; n++) {
         zeroCount++;
     }
 
-}
+    }
 
-console.log(zeros)
+    //console.log(zeros
 
-number = number.join('');
+    number = number.join('');
 
-if (numCount === zeroCount) {
+    if (numCount === zeroCount) {
     number++;
     number = number.toString();
     zeros.pop();
     zeros = zeros.join('');
     return word + zeros + number
-}
+    }
 
-zeros = zeros.join('');
-number++;
-number = number.toString();
+    zeros = zeros.join('');
+    number++;
+    number = number.toString();
 
-return word + zeros + number
-}
-
-
+    return word + zeros + number
+    }
 
 
 
 
-incrementString('hey0099');
+
+
+console.log(incrementString('hey0099'));
